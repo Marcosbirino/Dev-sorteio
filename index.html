@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <title>Ramdom Number</title>
+
+
+</head>
+
+<body>
+    <main>
+
+        <img src="./assets/logo.png" alt="dado.png"><br><br>
+        <h1>Sortear um número:</h1> <br><br>
+        <input autofocus type="number" placeholder="Entre" class="min">
+        <input type="number" placeholder="Até" class="max">
+        <button onclick="generateNumber()" id="btn">Sortear</button>
+        <h3>Resultado: <span id="number-output"></span></h3>
+
+    </main>
+
+
+
+</body>
+<script src="scripts.js"></script>
+
+</html>
