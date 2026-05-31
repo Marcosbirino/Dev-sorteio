@@ -12,8 +12,8 @@ function generateNumber(){
     const output = document.getElementById('number-output');
     output.innerHTML = 'Sorteando<span class="pontos"></span>';
 
-    // 2. Define o tempo de espera (ex: 2000 milissegundos = 2 segundos)
-    const tempoSegundos = 2; 
+    // 2. Define o tempo de espera (ex: 2000 milissegundos = 4 segundos)
+    const tempoSegundos = 4; 
     
     setTimeout(() => {
         // 3. Mostra o resultado na tela após o tempo acabar
