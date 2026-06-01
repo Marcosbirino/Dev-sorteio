@@ -57,16 +57,42 @@ button:active{
     background-color: #d32e2e;
 }
 
-h3{
-    margin: 25px;
+
+/* Estilo para quando o botão estiver desativado */
+button:disabled {
+    background-color: #555555; /* Cor cinza escuro */
+    color: #aaaaaa; /* Texto cinza claro */
+    cursor: not-allowed; /* Mostra o ícone de 'bloqueado' no mouse */
+    opacity: 0.6;
+}
+
+
+h2{
+    margin-top: 20px;
+   font-size: 35px;
 }
 
 #number-output {
     color: #39FF14; /* Este é o código hexadecimal do verde neon */
-    text-shadow: 0 0 8px #39FF14; /* Cria um leve efeito de brilho neon */
+    text-shadow: 0 0 4px #39FF14; /* Cria um leve efeito de brilho neon */
     font-size: 1.2em; /* Deixa o número ligeiramente maior que a palavra "Resultado" */
 }
 
+
+#user-error{
+    opacity: 0;  /* O texto começa invisível */
+    animation: aparecer 18s ease 0.10s forwards;   /* Chama a animação chamada "aparecer", que dura 1 segundo, espera 0.5 segundos para começar e mantém o estado final */
+    color: #FF2C2C; /* Este é o código hexadecimal do verde neon */
+    text-shadow: 0 0 0 5px #FF2C2C; /* Cria um leve efeito de brilho neon */
+    
+
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1; /* O texto fica 100% visível no final */
+  }
+}
 
 .pontos::after {
     content: '';
